@@ -92,6 +92,18 @@
     transition: 0.5s;
 }
 
+#sidenav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: var(--uniqe-bg);
+	box-shadow: 0 0 6px 0 rgb(206, 206, 206);
+    z-index: 2;
+    transition: 0.5s;
+}
+
 ul li{
 	list-style: none;
 	margin: 50px 20px;
@@ -696,6 +708,7 @@ ul li a{
 	border-radius: 50%;
 	object-fit: cover;
 	border: solid 6px var(--uniqe-color);
+	
 }
 
 .user-profile .name{
@@ -1331,14 +1344,11 @@ ul li a{
 }
 
 @media screen and (max-width: 770px){
-
-	#chart{
-		padding-top: 5px;
-	}
+    
+    
 
 	#container{
 		width: 95%;
-		
 	}
 	.messgaes .chart-head img{
 		width: 50px;
@@ -1346,9 +1356,7 @@ ul li a{
 	}
 	.messgaes .chart-head .compose .user-litle h4{
 		font-size: 14px;
-	}
-	.messgaes .chart-head .compose .user-out button a{
-		object-fit: ;
+		word-break: keep-all;
 	}
 	.messgaes .chart-head .compose .user-out button{
 		/* background: none; */
@@ -1358,16 +1366,20 @@ ul li a{
 		text-align: center;
 	}
 	.messgaes .chart-head .compose .user-out button i{
-		font-size: 2px;
+		font-size: 25px;
 		border-radius: 50%;
 		color: #fff;
 		padding: 1px 5px 4px 1px;
 
 	}
-	.messgaes .chart-body{
+	#chart{
+		padding-top: 5px;
+	}
+    .messgaes .chart-body{
 		height: 65vh;
 	}
 	.messgaes .chart-body .logo .space .names h4{
+	    word-spacing: -3px;
 		word-wrap: break-word;
 		font-size: 13px;
 	}
@@ -1441,11 +1453,10 @@ ul li a{
 	box-shadow: 0 0 3px 0 rgb(206, 206, 206);
 	margin-left: 10px;
 	width: 40%;
-	border-top-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 15px;
-	border-top-right-radius: 15px;
-	padding: 10px 30px 20px 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	border-radius: 18px 18px 18px 0px;
 }
 .alter-body .alter-toggle .lefting .text{
 	width: 90%;
@@ -1465,8 +1476,10 @@ ul li a{
 	width: 40%;
 	float: right;
 	background: var(--uniqe-color);
+	padding-top: 15px;
+	padding-bottom: 15px;
 	border-radius: 18px 18px 0 18px;
-	padding: 10px 30px 20px 30px;
+	padding-left: 10px;
 }
 .alter-body .lock .righting .text{
 	width: 90%;
@@ -1475,9 +1488,7 @@ ul li a{
 }
 .alter-body .lock .righting .text p{
 	font-size: 13px;
-	padding: 8px 16px;
 	color: white;
-	font-size: 20px;
 }
 
 .alter-footer{
@@ -1515,17 +1526,17 @@ ul li a{
 	}
 	.columns{
 		width: 95%;
-
 	}
+	
 	.alter-body{
 		height: 65vh;
 	}
 	.alter-body .alter-toggle .lefting{
-		width: 75%;
+		width: 40%;
 	}
 	.alter-body .lock .righting{
 		
-		width: 75%;
+		width: 40%;
 	}
 }
 
