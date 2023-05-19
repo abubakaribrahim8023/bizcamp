@@ -39,7 +39,7 @@
 }
 @media screen and (max-width: 770px){
 	#header{
-		padding: 3px 0 10px 0px;
+		padding: 13px 0 10px 0px;
 		width: 100%;
 
 	}
@@ -82,7 +82,7 @@
 }
 #sidenav{
     width: 250px;
-    height: 100vh;
+    height: 0;
     position: fixed;
     right: -250px;
     top: 0;
@@ -93,38 +93,54 @@
 }
 
 #sidenav{
-    width: 250px;
-    height: 100vh;
+    width: 220px;
+    height: 0;
     position: fixed;
-    right: -250px;
-    top: 0;
+    right: 0;
+    bottom: 0;
     background: var(--uniqe-bg);
 	box-shadow: 0 0 6px 0 rgb(206, 206, 206);
-    z-index: 2;
+    z-index: 6;
+	margin: 20px 20px;
     transition: 0.5s;
+	overflow-x: hidden;
+}
+#sidenav::-webkit-scrollbar{
+	width: 0;
 }
 
 ul li{
 	list-style: none;
-	margin: 50px 20px;
-	transition: .1s ease-in-out;
+	margin: 50px 10px;
+	transition: 0.07s ease-in-out;
 
-}
+} 
 ul li:hover{
 	background: linear-gradient(rgba(7, 118, 182,0.1),rgba(7, 118, 182,0.1));
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 40px;
-	border-bottom-left-radius: 5px;
-	border-top-left-radius: 5px;
+	border-radius: 5px 25px 25px 5px;
 	padding: 15px 10px 15px 0;
 	border-left: solid 20px var(--uniqe-color);
 	width: 80%;
 	padding-left: 10px;
 }
+ul p{
+	margin: 20px 0 0 20px;
+	font-size: 30px;
+}
 ul li a{
 	text-decoration: none;
 	color: var(--uniqe-color);
+	display: flex;
 
+}
+ul li a i{
+	margin-right: 5px;
+	font-size: 19px;
+	/* color: black; */
+}
+ul li a p{
+	font-size: 14px;
+	margin-top: 1px;
 }
 #menubtn{
     width: 50px;
@@ -133,16 +149,16 @@ ul li a{
     position: fixed;
     right: 30px;
     top: 13px;
-    border-radius: 3px;
-    z-index: 3;
+    /* border-radius: 3px; */
+    z-index: 6;
     cursor: pointer;
 }
 
 #menubtn img{
-    width: 80px;
-    height: 80px;
-    margin-top: -2x;
-    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    margin-top: 25px;
+    border-radius: 50%;
 }
 .txt{
     width: 50px;
@@ -157,9 +173,10 @@ ul li a{
 
 }
 .txt #messsges{
-    width: 25px;
+    width: 30px;
     height: 25px;
-    margin-top: -3x;
+    margin-top: -5px;
+	z-index: 1;
 	
 }
 @media screen and (max-width: 600px){
@@ -168,21 +185,15 @@ ul li a{
 		font-size: 13px;
 		padding: 12px 0 12px 12px;
 	}
-	#sidenav{
-    	width: 50%;
-    	height: 100vh;
-
-	}
 	
 	ul li a{
 		font-size: 15px;
 
 	}
-	#menubtn{
-		top: 0;
-	}
+	
 	.txt{
 		top: 28px;
+		display: none;
 	}
 	ul li:hover{
 		background: linear-gradient(rgba(7, 118, 182,0.1),rgba(7, 118, 182,0.1));

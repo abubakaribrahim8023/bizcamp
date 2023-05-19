@@ -8,17 +8,17 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="asset/boxicons/css/boxicons.min.css">
     <link rel="icon" type="image/png" href="images/a.png">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3454126744747191"
-     crossorigin="anonymous"></script>
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3454126744747191"
+     crossorigin="anonymous"></script> -->
 </head>
 <body>
     <?php include 'asset/layout/head.php';?>
     
     <!-- posting section  -->
     <div class="contentss">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3454126744747191"
+        <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3454126744747191"
             crossorigin="anonymous"></script>
-        <!-- Business Camp -->
+        !-- Business Camp --
         <ins class="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-3454126744747191"
@@ -27,7 +27,7 @@
             data-full-width-responsive="true"></ins>
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+        </script> -->
     </div>
     <section id="POST">
         <div class="content">
@@ -97,27 +97,5 @@
     <div class="loader">
         <div class="spanner"></div>
     </div>
-
-    <!-- our javaScript -->
-
-
-    <script>
-        var menubtn = document.getElementById("menubtn");
-        var sidenav = document.getElementById("sidenav");
-        var menu = document.getElementById("menu");
-        sidenav.style.right = "-250px";
-        menubtn.onclick = function(){
-            if(sidenav.style.right == "-250px"){
-                sidenav.style.right = "0";
-                menu.src="images/close.png.png";
-            }
-            else{
-                sidenav.style.right = "-250px";
-                menu.src = "images/menu.jpg";
-            }
-        }
-        
-
-    </script>
 </body>
 </html>

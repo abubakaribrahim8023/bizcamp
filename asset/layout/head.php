@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="asset/boxicons/css/boxicons.min.css">
 <div id="header">
     <div class="logo">
         <img src="images/a.png">
@@ -7,50 +8,60 @@
 <div id="sidenav">
     <nav>
         <ul>
+            <p onclick="closeMenu()">&times;</p>
             <li>
-                <a href="index.php">Home</a>
+                
             </li>
             <li>
-                <a href="user_profile.php">Profile</a>
+                <a href="index.php">
+                    <i class="bx bx-home"></i>
+                    <span>home</span>
+                </a>
             </li>
             <li>
-                <a href="user_post-data.php">Upload Post</a>
+                <a href="user_profile.php">
+                    <i class="bx bx-user"></i>
+                    <span>profile</span>
+                </a>
             </li>
             <li>
-                <a href="frequantly-question.php">Contact Us</a>
+                <a href="users_chart.php">
+                    <i class="bx bx-message"></i>
+                    <span>message</span>
+                </a>
+            </li>
+            <li>
+            <a href="user_post-data.php"><i class="bx bx-upload"></i>
+                <span>upload post</span></a>
+            </li>
+            <li>
+            <a href="frequantly-question.php"><i class="bx bx-phone"></i>
+                <span>contact us</span></a>
             </li>
 
             <li>
-                <a href="sign-in.php">Sign-in</a>
+                <a href="sign-in.php"><i class="bx bx-log-out"></i>
+                <span>sign-in</span></a>
             </li>
 
         </ul>
     </nav>
 </div>
 <div class="txt">
-    <a href="users_chart.php"><img src="images/mess.png" alt="" id="messsges"></a>
+    <a href="users_chart.php"><img src="images/images.png" alt="" id="messsges"></a>
 </div>
 <div id="menubtn">
-    <img src="images/menu.jpg" id="menu">
-
+    <img src="images/user.jpg" id="menu" onclick="openMenu()">
 </div>
 
 
-<script>
-        var menubtn = document.getElementById("menubtn");
-        var sidenav = document.getElementById("sidenav");
-        var menu = document.getElementById("menu");
-        sidenav.style.right = "-250px";
-        menubtn.onclick = function(){
-            if(sidenav.style.right == "-250px"){
-                sidenav.style.right = "0";
-                menu.src="images/close.png.png";
-            }
-            else{
-                sidenav.style.right = "-250px";
-                menu.src = "images/menu.jpg";
-            }
-        }
-        
+<script type="text/javaScript">
 
-    </script>
+    function openMenu(){
+        document.getElementById('sidenav').style.height = "350px";
+    }
+    function closeMenu(){
+        document.getElementById('sidenav').style.height = "0";
+    }
+
+</script>
