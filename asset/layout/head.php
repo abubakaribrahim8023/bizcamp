@@ -51,7 +51,7 @@
     <a href="users_chart.php"><img src="images/images.png" alt="" id="messsges"></a>
 </div>
 <div id="menubtn">
-    <img src="images/user.jpg" id="menu" onclick="openMenu()">
+    <img src="images/menu.jpg" id="menu" onclick="openMenu()">
 </div>
 
 
@@ -59,6 +59,7 @@
 
     function openMenu(){
         document.getElementById('sidenav').style.height = "350px";
+        // document.getElementById('menu').style.displaye = "none";
     }
     function closeMenu(){
         document.getElementById('sidenav').style.height = "0";

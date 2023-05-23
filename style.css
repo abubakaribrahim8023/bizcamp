@@ -150,14 +150,14 @@ ul li a p{
     right: 30px;
     top: 13px;
     /* border-radius: 3px; */
-    z-index: 6;
+    z-index: 3;
     cursor: pointer;
 }
 
 #menubtn img{
-    width: 30px;
-    height: 30px;
-    margin-top: 25px;
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
     border-radius: 50%;
 }
 .txt{
@@ -332,9 +332,11 @@ ul li a p{
 	margin-top: 15px;
 }
 .post-get .post-block .post-term .user .user-head img{
-	width: 50px;
-	height: 50px;
+	width: 47px;
+	box-shadow: 0px 5px 4px 0px #abbecf;
+	height: 47px;
 	object-fit: cover;
+	border: solid 3px var(--uniqe-color);
 	border-radius: 50%;
 }
 .post-get .post-block .post-term .user .user-head .name{
