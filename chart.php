@@ -1,14 +1,14 @@
 <?php 
     session_start();
-    if(!isset($_SESSION['user_id'])){
+    if(!isset($_SESSION['b_id'])){
 
         header("location:sign-in.php");
     }
 
     $conn = mysqli_connect('localhost','root', '12345678', 'bizcamp') or die();
 
-    $id = mysqli_real_escape_string($conn, $_GET['bizcampistgkkjsdmnjdsjnnkkllaoaokajsjhdshhaasjjmsdsdz']);
-    $selects = mysqli_query($conn, "SELECT * FROM user_table WHERE user_id = {$id}");
+    $id = $_GET['bizcampistgkkjsdmnjdsjnnkkllaoaokajsjhdshhaasjjmsdsdz'];
+    $selects = mysqli_query($conn, "SELECT * FROM user_table WHERE b_id = '$id'") or die();
 
     if(mysqli_num_rows($selects) > 0){
         $fetch = mysqli_fetch_assoc($selects);
@@ -48,7 +48,7 @@
                 </div>
                 <form action="#" method="POST" autocomplete="off" class="alter-footer">
                     <input type="hidden" name="incoming" value="<?php echo $id;?>">
-                    <input type="hidden" name="outcoming" value="<?php echo $_SESSION['user_id'];?>">
+                    <input type="hidden" name="outcoming" value="<?php echo $_SESSION['b_id'];?>">
                     <input type="text" name="message" class="input-field" placeholder="Write message">
                     <button name="send"><i class="bx bx-send"></i></button>
                 </form>

@@ -12,7 +12,8 @@
         $result = "";
         
 
-        $sqls = mysqli_query($conn,"SELECT * FROM message LEFT JOIN user_table ON user_table.user_id = message.outcoming_id WHERE (incoming_ig = {$incoming} AND outcoming_id = {$outcoming}) OR (incoming_ig = {$outcoming} AND outcoming_id = {$incoming})") or die();
+        $sqls = mysqli_query($conn,"SELECT * FROM message LEFT JOIN user_table ON user_table.b_id = message.outcoming_id WHERE (incoming_ig = '$incoming' AND outcoming_id = '$outcoming') OR (incoming_ig = '$outcoming' AND outcoming_id = '$incoming')") or die();
+        
 
         if(mysqli_num_rows($sqls) > 0){
 
@@ -30,7 +31,7 @@
                 }
                 else{
                     $result .= '<div class="alter-toggle">
-                            <img src="asset/profile/'.$tel['b_profile'].'" alt="">
+                            <img src="asset/profile/'.$tel['b_profile'].'" alt="sddjksdfjksjh">
                             <div class="lefting">
                                 <div class="text">
                                     <p>'.$tel['message'].'</p>

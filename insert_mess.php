@@ -28,7 +28,7 @@
 
         if(!empty($message)){
 
-            $insert  	= mysqli_query($conn, "INSERT INTO  message(incoming_ig, outcoming_id, message) VALUES({$incoming}, {$outcoming}, '{$message}')") or die();
+            $insert  	= mysqli_query($conn, "INSERT INTO  message(incoming_ig, outcoming_id, message) VALUES('$incoming', '$outcoming', '$message')") or die();
         }
         echo 'welcome';
     }

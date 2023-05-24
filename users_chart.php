@@ -95,7 +95,7 @@
                                             <p>'.$message.'</p>
                                         </div>
                                         <div class="activess">
-                                            <a href="chart.php?bizcampistgkkjsdmnjdsjnnkkllaoaokajsjhdshhaasjjmsdsdz='.$row['user_id'].'" id="a"><img src="images/mess.png" alt=""></a>
+                                            <a href="chart.php?bizcampistgkkjsdmnjdsjnnkkllaoaokajsjhdshhaasjjmsdsdz='.$row['b_id'].'" id="a"><img src="images/mess.png" alt=""></a>
                                         </div>
                                     </div>
                                 </div>
