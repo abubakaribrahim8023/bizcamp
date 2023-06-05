@@ -1666,14 +1666,15 @@ ul li a p{
 
 }
 .main .icons img{
-    width: 30px;
+    width: 40px;
     border-radius: 50%;
-    height: 30px;
+    height: 40px;
     object-fit: cover;
     border: 3px solid #efefef;
     margin-left: 10px;
     box-shadow: 0 0 5px 1px rgb(206, 206, 206);
     margin-top: 3px;
+	z-index: 12;
 }
 
 @media screen and (max-width: 770px){

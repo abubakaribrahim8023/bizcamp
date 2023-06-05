@@ -1,7 +1,7 @@
 <?php
 
     include 'user_crod.php';
-
+    session_start();
     $insert = new bizcamp;
 
     if(isset($_POST['send'])){

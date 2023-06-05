@@ -1,7 +1,6 @@
 <?php
 
   include 'user_crod.php';
-  include 'asset/layout/head.php';
 
   $insert = new bizcamp;
 
@@ -64,6 +63,7 @@
   <link rel="icon" type="image/png" href="images/a.png">
 </head>
 <body>
+  <?php include 'asset/layout/head.php';?>
 
   <section id="login-page">
     <div class="container-log">

@@ -50,15 +50,16 @@
     <div class="icons">
         <input type="text" placeholder="search">
         <i class="bx bx-search"></i>
+       
         <?php
-            // session_start();
-            if(isset($_SESSION['b_profile'])){
-
-                echo " <img src='images/23.jpg' onclick='openMenu()'>";
-            }
+          if(empty($_SESSION['b_profile'])){
+            echo '<img src="images/user.jpg" onclick="openMenu()">';
+          }
+          else{
+            echo '<img src="asset/profile/'.$_SESSION['b_profile'].'" onclick="openMenu()">';
+          }
         
-        
-        ?>
+        ?> 
        
     </div>
 </div>
