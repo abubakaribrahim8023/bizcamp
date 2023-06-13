@@ -1,11 +1,12 @@
-<link rel="stylesheet" href="asset/boxicons/css/boxicons.min.css">
+
+<link rel="stylesheet" href="asset/fontawesome-free/css/all.min.css">
 <div id="sidenav">
     <nav>
         <ul>
             <p onclick="closeMenu()">&times;</p>
             <li>
                 <a href="user_profile.php">
-                    <i class="bx bx-user"></i>
+                    <i class="fa fa-user"></i>
                     <span>my profile</span>
                 </a>
             </li>
@@ -13,7 +14,7 @@
                 <?php
                     if(isset($_SESSION['b_id'])){
                         echo '<a href="edit_profile.php?id='.$_SESSION['b_id'].';?>">
-                        <i class="bx bx-edit"></i>
+                        <i class="fa fa-edit"></i>
                         <span>edit profile</span>
                     </a>';
                     }
@@ -22,12 +23,12 @@
             </li>
       
             <li>
-            <a href="frequantly-question.php"><i class="bx bx-phone"></i>
+            <a href="frequantly-question.php"><i class="fa fa-phone-alt"></i>
                 <span>contact us</span></a>
             </li>
 
             <li>
-                <a href="sign-in.php"><i class="bx bx-log-out"></i>
+                <a href="sign-in.php"><i class="fa fa-sign-in-alt"></i>
                 <span>login</span></a>
             </li>
 
@@ -37,20 +38,17 @@
 <div class="main">
     <div class="head">
         <div class="text">
-            <h4>B</h4>
+            <i class="fa fa-home"></i>
             <h5>BizCamp</h5>
         </div>
         <div class="link">
-            <a href="index.php"><i class="bx bx-home"></i></a>
-            <a href="users_chart.php"><i class="bx bx-message"></i></a>
-            <a href="user_post-data.php"><i class="bx bx-upload"></i></a>
-            <a href="logout.php"><i class="bx bx-log-out"></i></a>
+            <a href="index.php"><i class="fa fa-home"></i></a>
+            <a href="users_chart.php"><i class="fa fa-comment-dots"></i></a>
+            <a href="user_post-data.php"><i class="fa fa-file-upload"></i></a>
+            <a href="logout.php"><i class="fa fa-sign-out-alt"></i></a>
         </div>
     </div>
-    <div class="icons">
-        <input type="text" placeholder="search">
-        <i class="bx bx-search"></i>
-       
+    <div class="icons">       
         <?php
           if(empty($_SESSION['b_profile'])){
             echo '<img src="images/user.jpg" onclick="openMenu()">';

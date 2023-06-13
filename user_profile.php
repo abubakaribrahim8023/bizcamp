@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="style.css">
   <title>BizCamp</title>
   <link rel="icon" type="image/png" href="images/a.png">
-  <link rel="stylesheet" href="asset/boxicons/css/boxicons.min.css">
+  <link rel="stylesheet" href="asset/fontawesome-free/css/all.min.css">
 </head>
 <body>
   <?php include 'asset/layout/head.php';?>
@@ -43,9 +43,9 @@
             <a href="edit_profile.php?id=<?php echo $_SESSION['b_id'];?>">Edit Profile</a>
           </div>
           <div class="icons">
-            <a href="index.php"><i class="bx bx-home"></i></a>
-            <a href="user_post-data.php"><i class="bx bx-image-add"></i></a>
-            <a href="logout.php"><i class="bx bx-log-out-circle"></i></a>
+            <a href="index.php"><i class="fa fa-home"></i></a>
+            <a href="user_post-data.php"><i class="fa fa-file-upload"></i></a>
+            <a href="logout.php"><i class="fa fa-sign-out-alt"></i></a>
           </div>
           <hr>
           <div class="text">

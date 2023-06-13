@@ -115,6 +115,9 @@ ul li{
 	list-style: none;
 	margin: 30px 10px;
 	transition: 0.07s ease-in-out;
+	padding: 9px 10px 9px 0;
+	border-radius: 5px 25px 25px 5px;
+	border-left: solid 7px white;
 
 } 
 ul li:hover{
@@ -538,7 +541,7 @@ ul li a p{
 	/* padding-bottom: 10px; */
 	position: absolute;
 	left: 0;
-	top: 50%;
+	top: 55%;
 	color: var(--uniqe-color);
     padding: 0 0.3rem;
     margin: 0 0.5rem;
@@ -555,7 +558,6 @@ ul li a p{
 	margin-top: 5px;
 	padding: 15px 0 15px 10px;
 	border: solid 1px var(--uniqe-color);
-	border-radius: 5px;
 	outline: none;
 	transition: 0.1s ease-out;
     font-size: 14px;
@@ -594,7 +596,7 @@ ul li a p{
 	/* padding-bottom: 10px; */
 	position: absolute;
 	left: 0;
-	top: 50%;
+	top: 55%;
 	color: var(--uniqe-color);
     padding: 0 0.3rem;
     margin: 0 0.5rem;
@@ -611,7 +613,6 @@ ul li a p{
 	margin-top: 5px;
 	padding: 15px 0 15px 10px;
 	border: solid 1px var(--uniqe-color);
-	border-radius: 5px;
 	outline: none;
 	transition: 0.1s ease-out;
     font-size: 14px;
@@ -768,8 +769,8 @@ ul li a p{
 	color: var(--uniqe-color);
 }
 .user-profile .name .icons a i{
-	font-size: 20px;
-	padding: 3px;
+	font-size: 15px;
+	padding: 5px;
 	border-radius: 2px;
 	border: solid 1px var(--uniqe-color);
 	background: var(--uniqe-color);
@@ -1603,78 +1604,48 @@ ul li a p{
     display: flex;
     justify-content: left;
 }
-.main .head .text h4{
+.main .head .text i{
     font-size: 23px;
     background: #efefef;
     border-radius: 50%;
-    padding: 9px 12px 9px 12px;
-    font-style: italic;
-    box-shadow: 0 0 4px 0 grey;
+    padding: 12px 12px;
+	color: var(--uniqe-color);
+	
 }
 .main .head .text h5{
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 12px;
     margin-left: 10px;
+	color: var(--uniqe-color);
 }
 .main .head  .link{
     /* background: red; */
     display: flex;
-    width: 40%;
+    width: 45%;
     text-align: right;
 }
 .main .head  .link i{
     font-size: 23px;
-    margin: 8px 10px 0 0;
-    margin-right: 30px;
+    margin: 8px 60px 0 0;
+    margin-right: 40px;
 	color: var(--uniqe-color);
 	font-weight: 900;
 
 }
 .main .icons{
     right: 70px;
-    display: flex;
-    top: 25px;
+    top: 15px;
     position: fixed;
-}
-.main .icons input{
-    padding: 5px 0 5px 10px;
-    border: solid 1px rgb(194, 188, 188);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    outline: none;
-    border-right: none;
-}
-.main .icons input::placeholder{
-    color: grey;
-    font-size: 16px;
-}
-.main .icons input:focus{
-    box-shadow: 0 0 4px 0 rgb(5, 145, 209);
-    border: solid 2px #efefef;
-    border-right: none;
-}
-.main .icons i{
-    /* font-size: 25px; */
-    padding: 10px 10px 10px 10px;
-    border-bottom-right-radius: 5px;
-    color: white;
-
-    border-top-right-radius: 5px;
-    background: rgb(0, 107, 139);
-    text-align: center;
-    justify-content: center;
-
 }
 .main .icons img{
     width: 40px;
     border-radius: 50%;
     height: 40px;
     object-fit: cover;
-    border: 3px solid #efefef;
+    border: 1px solid #efefef;
     margin-left: 10px;
-    box-shadow: 0 0 5px 1px rgb(206, 206, 206);
+    box-shadow: 0 0 1px 1px rgb(206, 206, 206);
     margin-top: 3px;
-	z-index: 12;
 }
 
 @media screen and (max-width: 770px){
@@ -1687,7 +1658,7 @@ ul li a p{
         justify-content: left;
         width: 100%;
     }
-    .main .head .text h4{
+    .main .head .text i{
         display: none;
     }
     .main .head .text h5{
@@ -1698,32 +1669,17 @@ ul li a p{
         font-size: 23px;
     }
     .main .icons{
-        right: 10px;
+        right: 20px;
         top: 10px;
 		/* display: ; */
-    }
-    .main .icons input{
-        display: none;
-        
-    }
-    .main .icons i{
-        border-radius: 5px;
-        /* padding: 5px 5px px 5px; */
-        font-size: 25px;
-        margin-top: -2px;
-        background: none;
-        color: black;
     }
     .main .icons img{
 		width: 30px;
 		border-radius: 50%;
 		height: 30px;
 		object-fit: cover;
-		border: 1px solid #efefef;
-		margin-left: 5px;
-		box-shadow: 0 0 2px 1px rgb(206, 206, 206);
-		margin-top: 3px;
-		z-index: 12;
+		border: 1px solid #efefef
+		
     }
     .main .head  .link{
         display: flex;

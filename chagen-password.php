@@ -86,7 +86,7 @@
                 <label for="">New Password</label>
             </div>
             <div class="form-group">
-                <input type="password" name="r-password" placeholder="">
+                <input type="password" name="r-password" placeholder=" ">
                 <label for="">Re-typ Password</label>
             </div>
             <div class="form-group">

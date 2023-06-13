@@ -14,6 +14,8 @@
     <link rel="icon" type="image/png" href="images/a.png">
     <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3454126744747191"
      crossorigin="anonymous"></script> -->
+     <link rel="stylesheet" href="asset/fontawesome-free/css/all.min.css">
+     
 </head>
 <body>
     <?php include 'asset/layout/head.php';?>
